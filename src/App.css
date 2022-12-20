@@ -5,6 +5,7 @@ body{
   background-image: url("./images/background.png");
   color: white;
 }
+
 header{
   background-image: url("https://images.alphacoders.com/549/thumb-1920-549919.jpg");
   background-position:right;
@@ -29,11 +30,11 @@ header{
   flex-wrap: wrap;
 }
 .sistemaSolar{
-  height: auto;
-  justify-content: center;
+  height: 250px;
+  justify-content:space-around;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items:baseline;
 }
 .missao{
   margin: 5px;
@@ -41,10 +42,14 @@ header{
   border-width: 1px;
   border-radius: 15px;
   border-style: solid;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .missao:hover{
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 5px 5px 5px rgb(56, 55, 55);
+  -webkit-transform:scale(1.05);
+  transform:scale(1.05);
 }
 .tituloMissao{
   font-weight: bold;
@@ -59,38 +64,50 @@ header{
 
 } */
 .planeta{
-  height: auto;
+  height: 100%;
   width: auto;
   min-width: 100px;
-  text-align: center;
+  /* text-align: center; */
 }
-img {
-  width: 100px;
+.planeta img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.planeta p{
+
+  justify-content: baseline;
 }
 .planeta:hover img{
-  width: 500px;
+  -webkit-transform:scale(2.0);
+  transform:scale(2.0);
+  /* width: 500px; */
 }
+
 .Mercúrio{
-  width: 35px;
+  width: 85px;
 }
+/* .Mercúrio:hover{
+  -webkit-transform:scale(5.0);
+  transform:scale(5.0);
+} */
 .Vênus{
-  width: 45px;
+  width: 100px;
 }
 .Terra{
-  width: 60px;
-}
-.Marte{
-  width: 55px;
-}
-.Júpiter{
-  width: 150px;
-}
-.Saturno{
   width: 130px;
 }
+.Marte{
+  width: 115px;
+}
+.Júpiter{
+  width: 260px;
+}
+.Saturno{
+  width: 210px;
+}
 .Urano{
-  width: 50px;
+  width: 110px;
 }
 .Netuno{
-  width: 50px;
+  width: 110px;
 }
